@@ -1,12 +1,12 @@
-A Command Line Interface (CLI) and a Graphical User Interface (GUI) are different ways to interact with your
-computer. Both interfaces have their strengths and weakness. CLI is a more efficient and powerful way to
-interact with your computer but it sacrifices some usability and has a steep learning curve. GUI is more 
-intuitive and user friendly but sacrifices by using far more system resources. CLI is an interface that 
-uses text commands to control your computer. This a very efficient way to interact with your computer, but 
-it requires the user to memorize or find the exact text commands. This requires quite a bit of effort most 
-people do not have time for or effort to find them that just makes the process tedious. GUI, on the other 
-hand, is easy to pick up for even new users of the platform. It presents the information through interactable 
-windows, icons, Menus, and other visual options for interaction. This visual interface has some drawbacks 
-such as the previously mentioned higher resource use but also they can offer less flexibility when working 
-with the computer system. The viability of both systems has caused many computer manufacturers to have both 
-interfaces available in their system. 
+A Command Line Interface (CLI) and a Graphical User Interface (GUI) are different ways to interact with 
+your computer. Both interfaces have their strengths and weakness. CLI is a more efficient and powerful 
+way to interact with your computer but it sacrifices some usability and has a steep learning curve. GUI 
+is more intuitive and user friendly but sacrifices by using far more system resources. CLI is an interface 
+that uses text commands to control your computer. This a very efficient way to interact with your computer, 
+but it requires the user to memorize or find the exact text commands. This requires quite a bit of effort 
+most people do not have time for or effort to find them that just makes the process tedious. GUI, on the 
+other hand, is easy to pick up for even new users of the platform. It presents the information through 
+interactable windows, icons, Menus, and other visual options for interaction. This visual interface has 
+some drawbacks such as the previously mentioned higher resource use but also they can offer less flexibility 
+when working with the computer system. The viability of both systems has caused many computer manufacturers 
+to have both interfaces available in their system. 
