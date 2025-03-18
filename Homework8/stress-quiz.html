@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Moments - Stress Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .quiz-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .disclaimer {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mindful Moments</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="meditation.html">Meditation</a>
+        <a href="self-care.html">Self-Care</a>
+        <a href="stress-quiz.html">Stress Quiz</a>
+    </nav>
+    
+    <div class="container">
+        <div id="main-content">
+            <h2 class="mt-4 mb-4">Stress Level Assessment Quiz</h2>
+            
+            <p class="highlight">This quiz will help you understand your current stress levels and suggest appropriate coping strategies.</p>
+            
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> This quiz is not intended for diagnostic purposes. It is merely a self-assessment tool. If you are experiencing significant distress, please consult with a healthcare professional.
+            </div>
+            
+            <div class="quiz-container">
+                <div id="quiz">
+                    <div class="question">
+                        <p><strong>1. How often do you feel overwhelmed by your responsibilities?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1a" value="0">
+                            <label class="form-check-label" for="q1a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1b" value="1">
+                            <label class="form-check-label" for="q1b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1c" value="2">
+                            <label class="form-check-label" for="q1c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1d" value="3">
+                            <label class="form-check-label" for="q1d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1e" value="4">
+                            <label class="form-check-label" for="q1e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>2. How often do you experience physical symptoms of stress (headaches, muscle tension, etc.)?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2a" value="0">
+                            <label class="form-check-label" for="q2a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2b" value="1">
+                            <label class="form-check-label" for="q2b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2c" value="2">
+                            <label class="form-check-label" for="q2c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2d" value="3">
+                            <label class="form-check-label" for="q2d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2e" value="4">
+                            <label class="form-check-label" for="q2e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>3. How well do you sleep at night?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3a" value="4">
+                            <label class="form-check-label" for="q3a">Very poorly</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3b" value="3">
+                            <label class="form-check-label" for="q3b">Poorly</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3c" value="2">
+                            <label class="form-check-label" for="q3c">Moderately</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3d" value="1">
+                            <label class="form-check-label" for="q3d">Well</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" id="q3e" value="0">
+                            <label class="form-check-label" for="q3e">Very well</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>4. How often do you find yourself feeling irritable or impatient?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4a" value="0">
+                            <label class="form-check-label" for="q4a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4b" value="1">
+                            <label class="form-check-label" for="q4b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4c" value="2">
+                            <label class="form-check-label" for="q4c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4d" value="3">
+                            <label class="form-check-label" for="q4d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q4" id="q4e" value="4">
+                            <label class="form-check-label" for="q4e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>5. How often do you engage in activities you enjoy?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5a" value="4">
+                            <label class="form-check-label" for="q5a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5b" value="3">
+                            <label class="form-check-label" for="q5b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5c" value="2">
+                            <label class="form-check-label" for="q5c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5d" value="1">
+                            <label class="form-check-label" for="q5d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q5" id="q5e" value="0">
+                            <label class="form-check-label" for="q5e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>6. How well do you feel you can handle unexpected problems?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6a" value="4">
+                            <label class="form-check-label" for="q6a">Very poorly</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6b" value="3">
+                            <label class="form-check-label" for="q6b">Poorly</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6c" value="2">
+                            <label class="form-check-label" for="q6c">Moderately</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6d" value="1">
+                            <label class="form-check-label" for="q6d">Well</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q6" id="q6e" value="0">
+                            <label class="form-check-label" for="q6e">Very well</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>7. How often do you have difficulty concentrating?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7a" value="0">
+                            <label class="form-check-label" for="q7a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7b" value="1">
+                            <label class="form-check-label" for="q7b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7c" value="2">
+                            <label class="form-check-label" for="q7c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7d" value="3">
+                            <label class="form-check-label" for="q7d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q7" id="q7e" value="4">
+                            <label class="form-check-label" for="q7e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>8. How often do you take time for self-care?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8a" value="4">
+                            <label class="form-check-label" for="q8a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8b" value="3">
+                            <label class="form-check-label" for="q8b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8c" value="2">
+                            <label class="form-check-label" for="q8c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8d" value="1">
+                            <label class="form-check-label" for="q8d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q8" id="q8e" value="0">
+                            <label class="form-check-label" for="q8e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>9. How often do you feel overwhelmed by your emotions?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9a" value="0">
+                            <label class="form-check-label" for="q9a">Never</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9b" value="1">
+                            <label class="form-check-label" for="q9b">Rarely</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9c" value="2">
+                            <label class="form-check-label" for="q9c">Sometimes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9d" value="3">
+                            <label class="form-check-label" for="q9d">Often</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q9" id="q9e" value="4">
+                            <label class="form-check-label" for="q9e">Always</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <p><strong>10. How would you rate your overall ability to cope with stress?</strong></p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10a" value="4">
+                            <label class="form-check-label" for="q10a">Very poor</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10b" value="3">
+                            <label class="form-check-label" for="q10b">Poor</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10c" value="2">
+                            <label class="form-check-label" for="q10c">Moderate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10d" value="1">
+                            <label class="form-check-label" for="q10d">Good</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q10" id="q10e" value="0">
+                            <label class="form-check-label" for="q10e">Excellent</label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary mt-3" onclick="calculateResults()">Calculate Results</button>
+                </div>
+                
+                <div id="results" class="results">
+                    <h3>Your Stress Level Assessment Results</h3>
+                    <p id="score-text"></p>
+                    <p id="interpretation"></p>
+                    <p id="recommendations"></p>
+                    <div class="mt-3">
+                        <p><strong>Your score breakdown:</strong></p>
+                        <p>Correct answers: <span id="correct-count">0</span></p>
+                        <p>Incorrect answers: <span id="incorrect-count">0</span></p>
+                        <p>Percentage correct: <span id="percentage">0%</span></p>
+                    </div>
+                    <button type="button" class="btn btn-secondary mt-3" onclick="resetQuiz()">Take the Quiz Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Mindful Moments</p>
+    </footer>
+    
+    <script>
+        function calculateResults() {
+            // Get all selected answers
+            let totalScore = 0;
+            let answeredQuestions = 0;
+            let correctCount = 0;
+            let incorrectCount = 0;
+            
+            // Check each question
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                
+                if (selectedOption) {
+                    answeredQuestions++;
+                    const value = parseInt(selectedOption.value);
+                    totalScore += value;
+                    
+                    // For the extra credit requirement:
+                    // Consider "correct" answers as those with values 0 or 1 (low stress responses)
+                    if (value <= 1) {
+                        correctCount++;
+                    } else {
+                        incorrectCount++;
+                    }
+                }
+            }
+            
+            // Check if all questions are answered
+            if (answeredQuestions < 10) {
+                alert("Please answer all questions before submitting.");
+                return;
+            }
+            
+            // Calculate percentage for the extra credit requirement
+            const percentage = Math.round((correctCount / 10) * 100);
+            
+            // Update the results
+            document.getElementById('correct-count').textContent = correctCount;
+            document.getElementById('incorrect-count').textContent = incorrectCount;
+            document.getElementById('percentage').textContent = `${percentage}%`;
+            
+            // Display score interpretation
+            const scoreText = document.getElementById('score-text');
+            const interpretation = document.getElementById('interpretation');
+            const recommendations = document.getElementById('recommendations');
+            
+            scoreText.textContent = `Your stress level score is ${totalScore} out of 40.`;
+            
+            if (totalScore <= 10) {
+                interpretation.textContent = "Your stress level appears to be low. You seem to be managing stress effectively.";
+                recommendations.textContent = "Continue with your current stress management practices. Consider sharing your strategies with others who might benefit from them.";
+            } else if (totalScore <= 20) {
+                interpretation.textContent = "Your stress level appears to be moderate. You have some effective coping strategies, but there may be room for improvement.";
+                recommendations.textContent = "Consider incorporating more regular self-care activities, such as mindfulness meditation, physical exercise, or time in nature.";
+            } else if (totalScore <= 30) {
+                interpretation.textContent = "Your stress level appears to be high. You may benefit from developing additional coping strategies.";
+                recommendations.textContent = "Consider prioritizing self-care, setting boundaries, practicing mindfulness, and potentially seeking support from friends, family, or professionals.";
+            } else {
+                interpretation.textContent = "Your stress level appears to be very high. It may be affecting your well-being significantly.";
+                recommendations.textContent = "Consider speaking with a healthcare professional about stress management strategies. In the meantime, focus on basic self-care: adequate sleep, healthy eating, physical activity, and social connection.";
+            }
+            
+            // Show results
+            document.getElementById('quiz').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+        }
+        
+        function resetQuiz() {
+            // Reset all radio buttons
+            const radioButtons = document.querySelectorAll('input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.checked = false;
+            });
+            
+            // Hide results and show quiz
+            document.getElementById('results').style.display = 'none';
+            document.getElementById('quiz').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
